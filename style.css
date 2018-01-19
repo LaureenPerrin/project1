@@ -1,0 +1,134 @@
+/*Style généraux peut importe le device*/
+
+
+/*police utilisée*/
+
+@font-face
+{
+	font-family: "fontawesome_regular", arial, sans-serif;
+ src: url("/fonts/fontawesome-regular-webfont.woff") format("woff"),
+      url("/fonts/fontawesome-regular-webfont.ttf") format("truetype"),
+      url("/fonts/fontawesome-regular-webfont.eot") format("eot"),
+      url("/fonts/fontawesome-regular-webfont.svg") format ("svg");
+
+    font-family: "glyphicons_halflings_regular", arial, sans-serif;
+ src: url("/fonts/glyphicons-halflings-regular.woff") format("woff"),
+      url("/fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+      url("/fonts/glyphicons-halflings-regular.eot") format("eot"),
+      url("/fonts/glyphicons-halflings-regular.svg") format("svg");
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*____________le corps de la page______________________________*/
+body
+{
+	font-family: "fontawesome_regular", arial, sans-serif;
+	width: 100%;
+	display: flex;
+	margin: auto;
+}
+
+p
+{
+	font-weight: bold;
+	font-size: small;
+}
+
+/*______________________________________mise en forme en-tete de page__________________________________________*/
+
+header
+{
+	padding-top: 15px;
+	margin-left: -35px;
+	width: 100%;
+}
+
+
+/*_____disposition logo et menu de navigation haut de page_______*/
+
+.logo
+{
+	margin-top: 30px;
+	padding-left: 200px;
+}
+
+.menu_navigation
+{
+	float: right;
+	margin-right: 100px;
+}
+
+/*____________________menu navigation principale_________________*/
+.menu_navigation a
+{
+	font-weight: bold;
+	font-size: small;
+	color: rgb(136, 139, 143);
+	text-decoration: none;
+}
+
+.menu_navigation a:hover
+{
+	border-top: 2px solid rgb(70, 140, 173);
+	padding: 10px 10px 10px 10px;
+}
+
+.menu_navigation li
+{
+	list-style-type: none;
+	margin: 10px 10px 10px 10px;
+}
+
+
+/*_____________________bandeau d'en tête avec image_______________*/
+
+.bandeau_en_tete img
+{
+	height: 500px;
+	position: relative;
+	width: 100%;
+}
+
+.texte_presentation
+{
+	position: absolute;
+	top: 300px;
+	left: 200px;
+}
+
+.texte_presentation h1
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: xx-large;
+	color: rgb(92, 173, 211);
+}
+
+.texte_presentation span 
+{
+	color: white;
+}
+
+.texte_presentation p 
+{
+	color: white;
+	padding-bottom: 10px;
+}
+
+.bouton_infos
+{
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	background-color: rgb(92, 173, 211);
+	border-radius: 2px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*_____________________________mise en page section 1 nos services_____________*/
