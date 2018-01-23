@@ -1,3 +1,4 @@
+
 /*Style généraux peut importe le device*/
 
 
@@ -5,7 +6,7 @@
 
 @font-face
 {
-	font-family: "fontawesome_regular", arial, sans-serif;
+  font-family: "fontawesome_regular", arial, sans-serif;
  src: url("/fonts/fontawesome-regular-webfont.woff") format("woff"),
       url("/fonts/fontawesome-regular-webfont.ttf") format("truetype"),
       url("/fonts/fontawesome-regular-webfont.eot") format("eot"),
@@ -24,111 +25,178 @@
 /*____________le corps de la page______________________________*/
 body
 {
-	font-family: "fontawesome_regular", arial, sans-serif;
-	width: 100%;
-	display: flex;
-	margin: auto;
+  font-family: "fontawesome_regular", arial, sans-serif;
 }
 
-p
+#main-wrapper
 {
-	font-weight: bold;
-	font-size: small;
+  width: auto;
 }
 
 /*______________________________________mise en forme en-tete de page__________________________________________*/
 
 header
 {
-	padding-top: 15px;
-	margin-left: -35px;
-	width: 100%;
+ width: auto;
 }
-
-
-/*_____disposition logo et menu de navigation haut de page_______*/
+/*____________________logo et menu navigation principale_________________*/
 
 .logo
 {
-	margin-top: 30px;
-	padding-left: 200px;
+  margin-top: 15px;
 }
 
 .menu_navigation
 {
-	float: right;
-	margin-right: 100px;
-}
-
-/*____________________menu navigation principale_________________*/
-.menu_navigation a
-{
-	font-weight: bold;
-	font-size: small;
-	color: rgb(136, 139, 143);
-	text-decoration: none;
-}
-
-.menu_navigation a:hover
-{
-	border-top: 2px solid rgb(70, 140, 173);
-	padding: 10px 10px 10px 10px;
+   display: flex;  
+   justify-content: space-around;  
+   text-align: center;
 }
 
 .menu_navigation li
 {
-	list-style-type: none;
-	margin: 10px 10px 10px 10px;
+  list-style-type: none;
+  display: inline-block;    
+  display: inline-flex;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 
-/*_____________________bandeau d'en tête avec image_______________*/
-
-.bandeau_en_tete img
+.menu_navigation a
 {
-	height: 500px;
-	position: relative;
-	width: 100%;
+  font-weight: bold;
+  font-size: small;
+  color: rgb(136, 139, 143);
+  text-decoration: none;
+  border: 2px solid rgb(70, 140, 173);
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  padding: 10px 15px;
+}
+
+/*________________________partie slide________________________*/
+
+.slideshow
+{
+  width: auto%;
+}
+
+.img1_slide
+{
+  position: relative;
+}
+
+.img2_slide
+{
+  position: relative;
+  display: none;
 }
 
 .texte_presentation
 {
-	position: absolute;
-	top: 300px;
-	left: 200px;
+  position: absolute;
+  top: 28%;
+  left: 15%;
 }
 
 .texte_presentation h1
 {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: xx-large;
-	color: rgb(92, 173, 211);
+  color: rgb(92, 173, 211);
+  text-transform: uppercase;
 }
 
-.texte_presentation span 
+.texte_presentation span
 {
-	color: white;
+  color: white;
 }
 
-.texte_presentation p 
+.texte_presentation p
 {
-	color: white;
-	padding-bottom: 10px;
+  color: white;
 }
 
 .bouton_infos
 {
-	font-weight: bold;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	background-color: rgb(92, 173, 211);
-	border-radius: 2px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 20px;
-	padding-right: 20px;
+  background-color: rgb(92, 173, 211);
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  text-decoration: center;
+  padding: 15px 30px;
 }
 
-/*_____________________________mise en page section 1 nos services_____________*/
+.icon_clic_droit .fa
+{
+  color: white;
+  padding: 10px 9px;
+  position: absolute;
+  top: 45%;
+  left: 97.8%;
+}
+
+.icon_clic_droit .fa:hover
+{
+  border: 2px solid rgb(73, 67, 83);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: rgb(73, 67, 83);
+}
+
+.icon_clic_gaughe .fa
+{
+  color: white;
+  padding: 10px 9px;
+  position: absolute;
+  top: 45%;
+}
+
+.icon_clic_gaughe .fa:hover
+{
+  border: 2px solid rgb(73, 67, 83);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: rgb(73, 67, 83);
+}
+/*_________________________media queries tablets________________________*/
+
+
+
+
+
+
+
+
+
+
+/*________________________________media queries desktop__________*/
+@media(min-width:991px)
+{
+  .presentation
+  {
+   display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  }
+
+  .logo
+  {
+    margin-bottom: 15px;
+  }
+
+  .menu_navigation a
+  {
+    border: 0px;
+    border-radius: 0px;
+  }
+  
+  .menu_navigation a:hover
+  {
+     border-top: 2px solid rgb(70, 140, 173);
+     padding-top: 25px;
+  }
+}
+
+/*_____________________________mise e
