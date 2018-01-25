@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8"/>
 
 			<!--pour que le viewport soit de la même  largeur que l'acran-->
-			<meta name="viewport" content="width=device-width"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 			<!--phrase donnée si url copiée sur les réseaux sociaux Facebooks/twitter-->
 			<meta name="description" content="Web angency est une agence web créatrice de site web!" />
 			<!-- Twitter Card data -->
-			<meta name="twitter:card" value="summary">
+			<meta name="twitter:card" value="summary"/>
 			<!-- Open Graph data -->
-			<meta property="og:title" content="Title Here" />
+			<meta property="og:title" content="Title Here"/>
 			<meta property="og:type" content="article" />
 			<meta property="og:url" content="http://www.example.com/" />
 			<meta property="og:image" content="http://example.com/image.jpg" />
 			<meta property="og:description" content="Description Here" />
 
 			<!--lien mise en  forme css-->
-			<link rel="stylesheet" type="text/css" href="reset.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" type="text/css" href="reset.css"/>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 			<link rel="stylesheet" type="text/css" href="style.css"/>
 
 			<!--tire de la page-->
@@ -31,7 +31,7 @@
 
 		<div id="main_wrapper">
 		<!--=================== Header ==========================================-->
-			<header>
+			<header id="accueil">
 
 				<div class="presentation">
 				  <!--logo de l'entreprise-->
@@ -54,7 +54,7 @@
 					  <img src="images/slider/bg1.jpg" alt="petite fille qui sourit avec les mains pleines de peinture!"/>
 
 					  <div class="texte_presentation">
-					      <h1>Webagency<span>: L'agence de tous <br/>vos projet!</span></h1>
+					      <h1>Webagency<span>: L'agence de tous <br/>vos projet !</span></h1>
 					      <p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p><br/>
 					      <a class="bouton_infos" href="#services">Plus d'infos</a>
 					  </div>
@@ -91,9 +91,58 @@
 			</header>
 
 
-		<!--================= Section 1 nos services ================================-->
+		<!--================= Section 1 nos services 
+		================================-->
+		    <section id="services">
 
-            <section>
+		    	<div class="nos_services">
+		    	   <h2>Nos services</h2>
+		    	   <div class="point_bleu_services"><span></span></div>
+
+            	   <p>WebAgency vous accompagne dans tous vos projets web et vous propose des solutions sur mesure grâce à nos services.</p>
+            	</div>
+
+            	<div class="ordi_services">
+
+            	   <img class="mac" src="images/main-feature.png" alt="ordinateur apple Mac"/>
+
+
+            	   <div class="icones_texte_services">
+
+                        <div class="ensemble_ux">
+
+                        	<div><i class="fa fa-line-chart fa-2x" aria-hidden="true"><p class="icone_ux"></p></i></div>
+
+            		        <div class="texte_ux">
+            		           <h3>UX Design</h3>
+            		           <p>User eXperience Design rend votre site accessible, facile à prendre en main  et surtout efficient pour les utilisateurs en prenant en compte vos attentes et vos besoins.</p>
+            		        </div>
+                        </div>
+                        
+                        <div class="ensemble_ui">
+                        
+                        	<i class="fa fa-cubes fa-2x" aria-hidden="true"><p class="icone_ui"></p></i>
+
+                            <div class="texte_ui">
+            		           <h3>UI Design</h3>
+            		           <p>User Interface Design permet de faciliter la navigation d’un utilisateur sur votre site en intervenant sur l'aspect visuel de votre page afin de capter l'attention de vos visiteurs.</p>
+                            </div>
+                        </div>
+
+                        <div class="ensemble_seo">
+
+                        	<i class="fa fa-pie-chart fa-2x" aria-hidden="true"><p class="icone_seo"></p></i>
+
+                        	<div class="texte_seo">
+            		           <h3>SEO</h3>
+            		           <p>Search Engine Optimization sert à obtenir un bon positionnement de votre site web dans les résultats des moteurs de recherche. Le but est de le rendre visible à tous les internautes intéressés par ce qu’il vend et propose.</p>
+            		        </div>
+            		    </div>
+
+                   </div>
+
+            	</div>
+
 
 
             </section>

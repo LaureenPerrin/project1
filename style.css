@@ -33,11 +33,20 @@ body
   width: auto;
 }
 
+h2
+{
+  text-transform: uppercase;
+}
+
+p
+{
+   font-weight: bold;
+}
 /*______________________________________mise en forme en-tete de page__________________________________________*/
 
 header
 {
- width: auto;
+  width: 100%;
 }
 /*____________________logo et menu navigation principale_________________*/
 
@@ -46,7 +55,7 @@ header
   margin-top: 15px;
 }
 
-.menu_navigation
+.menu_navigation ul
 {
    display: flex;  
    justify-content: space-around;  
@@ -56,17 +65,14 @@ header
 .menu_navigation li
 {
   list-style-type: none;
-  display: inline-block;    
-  display: inline-flex;
-  margin-right: 15px;
-  margin-bottom: 10px;
+  display: inline-block;  
 }
 
 
 .menu_navigation a
 {
   font-weight: bold;
-  font-size: small;
+  font-size: 0.7em; 
   color: rgb(136, 139, 143);
   text-decoration: none;
   border: 2px solid rgb(70, 140, 173);
@@ -79,12 +85,18 @@ header
 
 .slideshow
 {
-  width: auto%;
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
 .img1_slide
 {
   position: relative;
+}
+
+.img1_slide img
+{
+   max-width: 100%;
 }
 
 .img2_slide
@@ -93,17 +105,24 @@ header
   display: none;
 }
 
+.img2_slide img
+{
+   max-width: 100%;
+}
+
 .texte_presentation
 {
   position: absolute;
-  top: 28%;
-  left: 15%;
+  top: 30px;
+  left: 50px;
+  font-size: 0.2em;
 }
 
 .texte_presentation h1
 {
   color: rgb(92, 173, 211);
   text-transform: uppercase;
+
 }
 
 .texte_presentation span
@@ -123,7 +142,8 @@ header
   color: white;
   border-radius: 2px;
   text-decoration: center;
-  padding: 15px 30px;
+  padding: 5px 10px;
+  font-size: 0.2em;
 }
 
 .icon_clic_droit .fa
@@ -160,6 +180,21 @@ header
 }
 /*_________________________media queries tablets________________________*/
 
+@media(min-width:768px)
+{
+  .texte_presentation
+  {
+  top: 70px;
+  left: 100px;
+  font-size: 0.5em;
+  }
+
+  .bouton_infos
+  {
+  padding: 10px 20px;
+  font-size: 0.5em;
+  }
+}
 
 
 
@@ -179,6 +214,7 @@ header
   align-items: center;
   margin-top: 5px;
   margin-bottom: 10px;
+  font-size: 1.4em;
   }
 
   .logo
@@ -195,8 +231,265 @@ header
   .menu_navigation a:hover
   {
      border-top: 2px solid rgb(70, 140, 173);
-     padding-top: 25px;
+     padding-top: 30px;
+  }
+
+  .texte_presentation
+  {
+  top: 140px;
+  left: 190px;
+  font-size: 0.8em;
+  }
+
+  .bouton_infos
+  {
+  padding: 15px 30px;
+  font-size: 0.8em;
   }
 }
 
-/*_____________________________mise e
+
+/*_____première partie section nos services_______________________________*/
+
+.nos_services
+{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%%;
+  margin: auto;
+}
+
+.nos_services p
+{
+  color: rgb(136, 139, 143);
+  font-size: 0.7em;
+}
+
+.point_bleu_services
+{
+  border: 2px solid rgb(92, 173, 211);
+  border-radius: 50%;
+  background-color: rgb(92, 173, 211);
+  width: 9px;
+  height: 9px;
+}
+
+.point_bleu_services span {
+  position: relative;
+}
+ 
+.point_bleu_services span:before,
+.point_bleu_services span:after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid rgb(238, 235, 235);
+  width: 40px;
+  height: 7px;
+  top: 40%;
+  margin-top: -4px;
+}
+ 
+.point_bleu_services span:before {
+  right: 100%;
+  margin-right: 10px;
+}
+ 
+.point_bleu_services span:after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+
+/*_____________deuxième partie section nos services_______________________*/
+
+.ordi_services
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icones_texte_services p
+{
+  color: rgb(136, 139, 143);
+}
+
+.icones_texte_services
+{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 0.7em;
+}
+
+.ensemble_ux
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ensemble_ux i
+{
+  color: rgb(92, 173, 211);
+  border: 2px solid rgb(238, 235, 235);
+  border-radius: 50%;
+  padding: 13px 13px;
+  position: relative;
+  margin-right: 25px;
+}
+
+.ensemble_ux .icone_ux
+{
+  border: 2px solid rgb(92, 173, 211);
+  border-radius: 50%;
+  background-color: rgb(92, 173, 211);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  bottom: -7px;
+  right: -5px;
+}
+
+.ensemble_ui
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ensemble_ui i 
+{
+   color: rgb(92, 173, 211);
+  border: 2px solid rgb(238, 235, 235);
+  border-radius: 50%;
+  padding: 13px 11px;
+  position: relative;
+  margin-right: 25px;
+}
+
+.ensemble_ui .icone_ui
+{
+  border: 2px solid rgb(92, 173, 211);
+  border-radius: 50%;
+  background-color: rgb(92, 173, 211);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  bottom: -7px;
+  right: -5px;
+}
+
+.ensemble_seo
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ensemble_seo i 
+{
+  color: rgb(92, 173, 211);
+  border: 2px solid rgb(238, 235, 235);
+  border-radius: 50%;
+  padding: 13px 15px;
+  position: relative;
+  margin-right: 25px;
+}
+
+.ensemble_seo .icone_seo
+{
+  border: 2px solid rgb(92, 173, 211);
+  border-radius: 50%;
+  background-color: rgb(92, 173, 211);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  bottom: -7px;
+  right: -5px;
+}
+
+/*_________________________media queries tablets________________________*/
+
+@media(min-width:768px)
+{
+  @keyframes animationmac
+  {
+    0%
+    {
+      transform: rotateX(0deg) scale(1, 1);
+    }
+    100%
+    {
+      transform: rotateX(360deg) scale(0.5, 0.5);
+    }
+  }
+
+  .mac:hover
+  {
+    animation: animationmac 2s ease alternate;
+  }
+
+  .nos_services
+  {
+    width: 50%;
+  }
+
+  .icones_texte_services
+  {
+    font-size: 0.9em;
+  }
+
+  .nos_services p
+  {
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*________________________________media queries desktop__________*/
+@media(min-width:991px)
+{
+  .ordi_services
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 450px;
+  }
+
+  .nos_services
+  {
+    margin-bottom: 40px;
+  }
+
+  .nos_services h2
+  {
+    font-size: 3.5em;
+  }
+
+  .icones_texte_services
+  {
+    width: 40%;
+    align-self: flex-end;
+  }
+
+  .mac
+  {
+    align-self: flex-start;
+  }
+}
