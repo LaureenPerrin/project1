@@ -266,6 +266,7 @@ header
 {
   color: rgb(136, 139, 143);
   font-size: 0.7em;
+  margin-top: 50px;
 }
 
 .point_bleu_services
@@ -273,37 +274,46 @@ header
   border: 2px solid rgb(92, 173, 211);
   border-radius: 50%;
   background-color: rgb(92, 173, 211);
-  width: 9px;
-  height: 9px;
+  width: 12px;
+  height: 12px;
 }
 
-.point_bleu_services span {
+.point_bleu_services span 
+{
   position: relative;
 }
  
 .point_bleu_services span:before,
-.point_bleu_services span:after {
+.point_bleu_services span:after 
+{
   content: "";
   position: absolute;
   border-bottom: 2px solid rgb(238, 235, 235);
-  width: 40px;
+  width: 85px;
   height: 7px;
   top: 40%;
-  margin-top: -4px;
+  margin-top: -3px;
 }
  
-.point_bleu_services span:before {
+.point_bleu_services span:before 
+{
   right: 100%;
   margin-right: 10px;
 }
  
-.point_bleu_services span:after {
+.point_bleu_services span:after 
+{
   left: 100%;
   margin-left: 10px;
 }
 
 
 /*_____________deuxième partie section nos services_______________________*/
+
+.mac
+  {
+    max-width: 100%;
+  }
 
 .ordi_services
 {
@@ -432,6 +442,7 @@ header
     }
   }
 
+
   .mac:hover
   {
     animation: animationmac 2s ease alternate;
@@ -491,5 +502,192 @@ header
   .mac
   {
     align-self: flex-start;
+  }
+}
+
+/*___________________________section nos projets___________________*/
+
+#portfolio
+{
+  margin-top: 40px;
+}
+
+.nos_projets
+{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%%;
+  margin: auto;
+}
+
+.nos_projets p
+{
+  color: rgb(136, 139, 143);
+  font-size: 0.7em;
+  margin-top: 50px;
+}
+
+.menu_projets ul
+{
+   display: flex;  
+   justify-content: center;  
+   align-items:center;
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+.menu_projets li
+{
+  list-style-type: none;
+  display: inline-block;  
+  display: inline-table;
+  border-collapse: collapse;
+}
+
+
+.menu_projets a
+{
+  font-weight: bold;
+  font-size: 0.7em;
+  color: rgb(136, 139, 143);
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: rgb(238, 235, 235);
+  margin-right: -2px;
+  position: relative;
+}
+
+
+.menu_projets a:focus
+{
+  font-weight: bold;
+  font-size: 0.7em;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: rgb(92, 173, 211);
+  margin-right: -2px;
+  border-bottom: 2px solid rgb(70, 140, 173);
+}
+
+.menu_projets a:focus:after
+{
+    content: "";
+    border: 5px solid transparent;
+    border-top: 5px solid rgb(76,140,170);
+    position: absolute;
+    margin-top: 28px;
+    margin-left: -30px;
+}
+
+
+.all_w 
+{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.port
+{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/*__________________images portfolio______*/
+
+#all_works
+{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  height: 900px;
+}
+
+.img_portfolio
+{
+  width: 20%;
+  height: 20%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.img
+{
+  position: relative;
+  max-width: 100%;
+}
+
+.texte_img
+{
+  position: absolute;
+  color: white;
+  max-width: 100%;
+}
+
+.texte_img i
+{
+  position: absolute;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgb(92, 173, 211);
+  padding: 10px 10px;
+  font-size: 1.2em;
+}
+
+.texte_img p 
+{
+    background-color: rgba(15,15,15,0.5);
+    max-width: 100%;
+}
+
+/*_________________________media queries tablets________________________*/
+@media(min-width:768px)
+{
+  .nos_projets
+  {
+    width: 50%;
+  }
+
+  .nos_projets p
+  {
+    font-size: 1em;
+  }
+
+  .menu_projets a
+  {
+    font-size: 1em;
+  }
+
+  .menu_projets a:focus
+  {
+    font-size: 1em;
+  }
+
+  .menu_projets a:focus:after
+  {
+   margin-top: 29px;
+   margin-left: -40px;
+  }
+
+}
+
+
+/*________________________________media queries desktop__________*/
+@media(min-width:991px)
+{
+  .nos_projet
+  {
+    margin-bottom: 40px;
+  }
+
+  .nos_projets h2
+  {
+    font-size: 3.5em;
   }
 }
