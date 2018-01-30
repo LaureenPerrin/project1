@@ -55,6 +55,12 @@ header
   margin-top: 15px;
 }
 
+.menu_navigation
+{
+  text-align: center;
+  width: 330px;
+}
+
 .menu_navigation ul
 {
    display: flex;  
@@ -331,22 +337,17 @@ header
 .icones_texte_services
 {
   text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 0.7em;
 }
 
-.ensemble_ux
+.ensemble
 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
 }
 
-.ensemble_ux i
+.ensemble i
 {
   color: rgb(92, 173, 211);
   border: 2px solid rgb(238, 235, 235);
@@ -356,7 +357,7 @@ header
   margin-right: 25px;
 }
 
-.ensemble_ux .icone_ux
+.ensemble .icone
 {
   border: 2px solid rgb(92, 173, 211);
   border-radius: 50%;
@@ -368,63 +369,6 @@ header
   right: -5px;
 }
 
-.ensemble_ui
-{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.ensemble_ui i 
-{
-   color: rgb(92, 173, 211);
-  border: 2px solid rgb(238, 235, 235);
-  border-radius: 50%;
-  padding: 13px 11px;
-  position: relative;
-  margin-right: 25px;
-}
-
-.ensemble_ui .icone_ui
-{
-  border: 2px solid rgb(92, 173, 211);
-  border-radius: 50%;
-  background-color: rgb(92, 173, 211);
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  bottom: -7px;
-  right: -5px;
-}
-
-.ensemble_seo
-{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.ensemble_seo i 
-{
-  color: rgb(92, 173, 211);
-  border: 2px solid rgb(238, 235, 235);
-  border-radius: 50%;
-  padding: 13px 15px;
-  position: relative;
-  margin-right: 25px;
-}
-
-.ensemble_seo .icone_seo
-{
-  border: 2px solid rgb(92, 173, 211);
-  border-radius: 50%;
-  background-color: rgb(92, 173, 211);
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  bottom: -7px;
-  right: -5px;
-}
 
 /*_________________________media queries tablets________________________*/
 
@@ -442,7 +386,6 @@ header
     }
   }
 
-
   .mac:hover
   {
     animation: animationmac 2s ease alternate;
@@ -453,15 +396,31 @@ header
     width: 50%;
   }
 
-  .icones_texte_services
+ .icones_texte_services
   {
-    font-size: 0.9em;
+   display: flex;
+   flex-direction: column;
+   align-items: baseline;
+   padding-left: 5px;
+   padding-right: 5px;
+   font-size: 0.9em;
+   text-align: justify;
+  }
+
+  .ensemble
+  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    text-align: justify;
   }
 
   .nos_services p
   {
     font-size: 1em;
   }
+
+
 }
 
 
@@ -608,46 +567,43 @@ header
 
 .img_portfolio
 {
-  max-width: 100%;
-  margin-right: 10px;
   position: relative;
+  padding-bottom: 5px;
 }
 
 .img
 {
-  max-width: 100%;
   height: 200px;
-  transform: scale(0.8);
+  position: relative;
 }
 
 .texte_img
 {
   position: absolute;
   color: white;
-  max-width: 100%;
-  left:30px;
+  width: 300px;
+  height: 80px;
+  left:0px;
   top:120px;
+  background-color: rgba(15,15,15,0.5);
 }
 
 .texte_img i
 {
   position: absolute;
-  left:192px;
-  top:-3px;
+  left:250px;
+  top:-20px;
   color: white;
   border: 2px solid white;
   border-radius: 50%;
   background-color: rgb(92, 173, 211);
   padding: 10px 10px;
-  font-size: 0.7em;
   max-width: 100%;
 }
 
 .texte_img p 
 {
-  background-color: rgba(15,15,15,0.5);
-  max-width: 100%;
-  font-size: 0.9em;
+  font-size: 1.2em;
   padding: 5px 59px 20px 6px;
 }
 
