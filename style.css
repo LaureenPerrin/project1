@@ -604,22 +604,20 @@ header
   display:flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  position: relative;
-  height: 900px;
 }
 
 .img_portfolio
 {
-  width: 20%;
-  height: 20%;
+  max-width: 100%;
   margin-right: 10px;
   position: relative;
 }
 
 .img
 {
-  position: relative;
   max-width: 100%;
+  height: 200px;
+  transform: scale(0.8);
 }
 
 .texte_img
@@ -627,23 +625,30 @@ header
   position: absolute;
   color: white;
   max-width: 100%;
+  left:30px;
+  top:120px;
 }
 
 .texte_img i
 {
   position: absolute;
+  left:192px;
+  top:-3px;
   color: white;
   border: 2px solid white;
   border-radius: 50%;
   background-color: rgb(92, 173, 211);
   padding: 10px 10px;
-  font-size: 1.2em;
+  font-size: 0.7em;
+  max-width: 100%;
 }
 
 .texte_img p 
 {
-    background-color: rgba(15,15,15,0.5);
-    max-width: 100%;
+  background-color: rgba(15,15,15,0.5);
+  max-width: 100%;
+  font-size: 0.9em;
+  padding: 5px 59px 20px 6px;
 }
 
 /*_________________________media queries tablets________________________*/
@@ -675,6 +680,10 @@ header
    margin-left: -40px;
   }
 
+  .texte_img i
+  {
+    font-size: 1.2em;
+  }
 }
 
 
