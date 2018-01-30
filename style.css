@@ -651,6 +651,27 @@ header
   padding: 5px 59px 20px 6px;
 }
 
+#creative
+{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#corporate
+{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#portfolio_img
+{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /*_________________________media queries tablets________________________*/
 @media(min-width:768px)
 {
