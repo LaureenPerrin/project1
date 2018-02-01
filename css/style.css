@@ -89,54 +89,79 @@ header
 
 /*________________________partie slide________________________*/
 
-.slideshow
+.slideshow-container 
 {
   max-width: 100%;
-  margin-bottom: 30px;
-}
-
-.img1_slide
-{
   position: relative;
+  margin: auto;
+}
+.mySlides img
+{
+  max-width: 100%;
 }
 
-.img1_slide img
+.mySlides 
 {
-   max-width: 100%;
-}
-
-.img2_slide
-{
-  position: relative;
   display: none;
 }
 
-.img2_slide img
+.prev, .next 
 {
-   max-width: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+
 }
 
-.texte_presentation
+.next
+{
+  right: 0;
+}
+
+.prev:hover
+{
+  border: 2px solid rgb(73, 67, 83);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: rgb(73, 67, 83);
+ }
+
+ .next:hover 
+ {
+  border: 2px solid rgb(73, 67, 83);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: rgb(73, 67, 83);
+ }
+
+.text
 {
   position: absolute;
   top: 30px;
   left: 50px;
   font-size: 0.2em;
+  width: 100%;
 }
 
-.texte_presentation h1
+.text h1
 {
   color: rgb(92, 173, 211);
   text-transform: uppercase;
 
 }
 
-.texte_presentation span
+.text span
 {
   color: white;
 }
 
-.texte_presentation p
+.text p
 {
   color: white;
 }
@@ -152,43 +177,29 @@ header
   font-size: 0.2em;
 }
 
-.icon_clic_droit .fa
+.fade 
 {
-  color: white;
-  padding: 10px 9px;
-  position: absolute;
-  top: 45%;
-  left: 97.8%;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.icon_clic_droit .fa:hover
+@-webkit-keyframes fade 
 {
-  border: 2px solid rgb(73, 67, 83);
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  background-color: rgb(73, 67, 83);
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.icon_clic_gaughe .fa
+@keyframes fade 
 {
-  color: white;
-  padding: 10px 9px;
-  position: absolute;
-  top: 45%;
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.icon_clic_gaughe .fa:hover
-{
-  border: 2px solid rgb(73, 67, 83);
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  background-color: rgb(73, 67, 83);
-}
 /*_________________________media queries tablets________________________*/
 
 @media(min-width:768px)
 {
-  .texte_presentation
+  .text
   {
   top: 70px;
   left: 100px;
@@ -212,13 +223,6 @@ header
 }
 
 
-
-
-
-
-
-
-
 /*________________________________media queries desktop__________*/
 @media(min-width:991px)
 {
@@ -239,7 +243,7 @@ header
      padding-top: 30px;
   }
 
-  .texte_presentation
+  .text
   {
   top: 140px;
   left: 190px;
@@ -715,7 +719,7 @@ header
   .all_img
   {
   margin-bottom: 50px;
-  }
+  } 
 }
 
 
@@ -828,7 +832,7 @@ input
 {
   #formulaire
   {
-   left:800px;
+   left:600px;
   }
 }
 
