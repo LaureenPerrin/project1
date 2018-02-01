@@ -198,7 +198,16 @@ header
   .bouton_infos
   {
   padding: 10px 20px;
-  font-size: 0.5em;
+  font-size: 0.7em;
+  }
+  .presentation
+  {
+   display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 1.2em;
   }
 }
 
@@ -213,16 +222,6 @@ header
 /*________________________________media queries desktop__________*/
 @media(min-width:991px)
 {
-  .presentation
-  {
-   display:flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 1.4em;
-  }
-
   .logo
   {
     margin-bottom: 15px;
@@ -250,7 +249,7 @@ header
   .bouton_infos
   {
   padding: 15px 30px;
-  font-size: 0.8em;
+  font-size: 1em;
   }
 }
 
@@ -563,6 +562,13 @@ header
   display:flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  display: none;
+}
+
+#all_works:target
+{
+ display:flex;
+  justify-content: space-around;
 }
 
 .img_portfolio
@@ -586,13 +592,20 @@ header
   left:0px;
   top:120px;
   background-color: rgba(15,15,15,0.5);
+  opacity:0;
+  transition: opacity 1.5s ease;
+}
+
+.texte_img:hover 
+{
+  opacity:1;
 }
 
 .texte_img i
 {
   position: absolute;
-  left:250px;
-  top:-20px;
+  left:240px;
+  top:-25px;
   color: white;
   border: 2px solid white;
   border-radius: 50%;
@@ -612,6 +625,15 @@ header
   display:flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  display: none;
+}
+
+#creative:target
+{
+  display:flex;
+  justify-content: space-around;
+   align-items:center;
+  height:630px;
 }
 
 #corporate
@@ -619,6 +641,15 @@ header
   display:flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  display: none;
+}
+
+#corporate:target
+{
+  display:flex;
+  justify-content: space-around;
+   align-items:center;
+  height:630px;
 }
 
 #portfolio_img
@@ -626,6 +657,20 @@ header
   display:flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  display: none;
+}
+
+#portfolio_img:target
+{
+  display:flex;
+  justify-content: space-around;
+   align-items:center;
+  height:630px;
+}
+
+.all_img
+{
+  margin-bottom: 210px;
 }
 
 /*_________________________media queries tablets________________________*/
@@ -661,6 +706,16 @@ header
   {
     font-size: 1.2em;
   }
+
+    .img_portfolio
+  {
+    padding-right:5px;
+  }
+
+  .all_img
+  {
+  margin-bottom: 50px;
+  }
 }
 
 
@@ -677,3 +732,139 @@ header
     font-size: 3.5em;
   }
 }
+
+/*_____________________section contact___________________________*/
+
+/*__________________google map____________________*/
+#contact {
+    margin-top: 80px;
+}
+
+#map 
+{
+  height: 600px;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+/*_______________formulaire_______*/
+#formulaire
+{
+  width: 380px;
+  height: 580px;
+}
+
+#formulaire h3
+{
+  font-size: 1.9em;
+  padding-left: 12px;
+}
+
+#formulaire p
+{
+  font-weight: normal;
+  color:rgb(136, 139, 143);
+  padding-left: 12px;
+}
+
+form
+{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+textarea
+{
+  width: 336px;
+  height: 120px;
+  margin-top: 15px;
+  border: 1px solid rgb(136, 139, 143);
+  padding: 10px 10px;
+}
+
+input
+{
+  margin-top: 15px;
+  border: 1px solid rgb(136, 139, 143);
+  padding: 10px 10px;
+}
+
+.bouton_envoye
+{
+  background-color: rgb(92, 173, 211);
+  border-top-right-left: 2px solid rgb(92, 173, 211);
+  border-bottom:2px solid rgb(76,140,170);
+  border-radius: 5px;
+  color: white;
+  padding: 10px 10px;
+}
+
+/*_________________________media queries tablets________________________*/
+  @media(min-width:768px)
+{
+  #contact
+  {
+    position:relative;
+  }
+  #map 
+  {
+  position:relative;
+  }
+
+  #formulaire
+  {
+  background-color:rgba(255,255,255,0.5);
+  position:absolute;
+  left:350px;
+  top:10px;
+  }
+  
+}
+
+
+/*________________________________media queries desktop__________*/
+@media(min-width:991px)
+{
+  #formulaire
+  {
+   left:800px;
+  }
+}
+
+/*_______________________________________footer________________________*/
+
+footer
+{
+ text-align: center;
+}
+
+.footp
+{
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: rgb(136, 139, 143);
+}
+
+.retour_hp a
+{
+  text-decoration: none;
+  color: rgb(136, 139, 143);
+  font-weight: bold;
+}
+
+/*_________________________media queries tablets________________________*/
+  @media(min-width:768px)
+{
+   footer
+   {
+  display: flex;
+  justify-content:space-around;
+  align-items: baseline;
+  }
+}
+
+
+/*________________________________media queries desktop__________*/
+
+
