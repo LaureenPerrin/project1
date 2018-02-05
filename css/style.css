@@ -109,8 +109,7 @@ header
 {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
+  top: 45px;
   margin-top: -22px;
   padding: 16px;
   color: white;
@@ -146,7 +145,6 @@ header
   top: 30px;
   left: 50px;
   font-size: 0.2em;
-  width: 100%;
 }
 
 .text h1
@@ -220,6 +218,11 @@ header
   margin-bottom: 3px;
   font-size: 1.2em;
   }
+
+  .prev, .next 
+  {
+    top:120px;
+  }
 }
 
 
@@ -245,8 +248,8 @@ header
 
   .text
   {
-  top: 140px;
-  left: 190px;
+  top: 110px;
+  left: 110px;
   font-size: 0.8em;
   }
 
@@ -254,6 +257,11 @@ header
   {
   padding: 15px 30px;
   font-size: 1em;
+  }
+
+  .prev, .next 
+  {
+    top:160px;
   }
 }
 
@@ -600,7 +608,7 @@ header
   transition: opacity 1.5s ease;
 }
 
-.texte_img:hover 
+.img_portfolio:hover .texte_img
 {
   opacity:1;
 }
@@ -752,36 +760,30 @@ header
 }
 
 /*_______________formulaire_______*/
-#formulaire
-{
-  width: 380px;
-  height: 580px;
-}
 
 #formulaire h3
 {
   font-size: 1.9em;
-  padding-left: 12px;
+  padding-left: 20px;
 }
 
 #formulaire p
 {
   font-weight: normal;
   color:rgb(136, 139, 143);
-  padding-left: 12px;
+  padding-left: 20px;
 }
 
 form
 {
-  max-width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
 
 textarea
 {
-  width: 336px;
-  height: 120px;
+  width: 93%;
   margin-top: 15px;
   border: 1px solid rgb(136, 139, 143);
   padding: 10px 10px;
@@ -789,6 +791,7 @@ textarea
 
 input
 {
+  width: 93%;
   margin-top: 15px;
   border: 1px solid rgb(136, 139, 143);
   padding: 10px 10px;
@@ -802,6 +805,7 @@ input
   border-radius: 5px;
   color: white;
   padding: 10px 10px;
+  width: 50%;
 }
 
 /*_________________________media queries tablets________________________*/
@@ -820,8 +824,9 @@ input
   {
   background-color:rgba(255,255,255,0.5);
   position:absolute;
-  left:350px;
-  top:10px;
+  right: 5px;
+  top:35px;
+  width: 40%;
   }
   
 }
@@ -832,7 +837,7 @@ input
 {
   #formulaire
   {
-   left:600px;
+   right: 50px;
   }
 }
 
