@@ -1,80 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+            <!--pour déclarer l'encodage de la page-->
 		<meta charset="utf-8"/>
 
-			<!--pour que le viewport soit de la même  largeur que l'acran-->
-			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!--pour que le viewport soit de la même  largeur que l'écran-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-			<!--phrase donnée si url copiée sur les réseaux sociaux Facebooks/twitter-->
-			<meta name="description" content="Web angency est une agence web créatrice de site web!" />
-			<!-- Twitter Card data -->
-			<meta name="twitter:card" value="summary"/>
-			<!-- Open Graph data -->
-			<meta property="og:title" content="Title Here"/>
-			<meta property="og:type" content="article" />
-			<meta property="og:url" content="http://www.example.com/" />
-			<meta property="og:image" content="http://example.com/image.jpg" />
-			<meta property="og:description" content="Description Here" />
+            <!--titre de la page-->
+            <title>WebAgency</title>
 
-			<!--lien mise en  forme css-->
-			<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-			<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--phrase donnée si url copiée sur les réseaux sociaux-->
+		<meta name="description" content="WebAgency est l'agence web créatrice de votre futur site web!" />
 
-                  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+            <!-- pour Facebook Open Graph data -->
+            <meta property="og:title" content="WebAgency"/>
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="http://_____________" />
+            <meta property="og:image" content="images/logo.png" />
+            <meta property="og:description" content="WebAgency est l'agence web créatrice de votre futur site web!" />
 
-			<!--tire de la page-->
-			<title>WebAgency</title>
+		<!-- pour Twitter Card data -->
+		<meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@__________" />
+            <meta name="twitter:creator" content="@WebAgency" />
+            <meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
+            <meta property="og:title" content="WebAgency" />
+            <meta property="og:description" content="WebAgency est l'agence web créatrice de votre futur site web!" />
+            <meta property="og:image" content="images/logo.png" />
+
+		<!--lien mise en  forme css-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+            <!--lien js pour lien retour vers le haut dans footer-->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>      
+                  
 	</head>
 
-	<!--=============le corps de la page=============================-->
+	<!--=============le corps de la page==================================================================================================-->
 	<body>
 
 		<div id="main_wrapper">
-		<!--=================== Header ==========================================-->
+		<!--=================== Header =============================================================================-->
 			<header id="accueil">
 
 				<div class="presentation">
-				  <!--logo de l'entreprise-->
-				  <img class="logo" src="images/logo.png" alt="logo webagency"/>
-				  <!--menu qui suit la navigation-->
-				  <nav class="menu_navigation">
-					<ul> 
-						<li><a href="#accueil">Accueil</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				  </nav>
-		        </div>
+		      <!--========logo de l'entreprise================================================-->
+				      <img class="logo" src="images/logo.png" alt="logo webagency"/>
+			<!--========menu qui suit la navigation==========================================-->
+				      <nav class="menu_navigation">
+					      <ul> 
+						      <li><a href="#accueil">Accueil</a></li>
+						      <li><a href="#services">Services</a></li>
+						      <li><a href="#portfolio">Portfolio</a></li>
+						      <li><a href="#contact">Contact</a></li>
+					      </ul>
+				      </nav>
+		            </div>
 
-				<!--partie slide image-->
+	            <!--===========================partie slider====================================-->
 				<div class="slideshow-container">
 
-                              <!-- Full-width images with number and caption text -->
+                  <!-- =========================image slider======================================-->
 					<div class="mySlides fade">
-					     <img src="images/slider/bg1.jpg" alt="petite fille qui sourit avec les mains pleines de peinture!"/>
-                                   <div class="text">
-					         <h1>Webagency<span>: L'agence de tous <br/>vos projet !</span></h1>
-					         <p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p><br/>
-					         <a class="bouton_infos" href="#services">Plus d'infos</a>
+					      <img src="images/slider/bg1.jpg" alt="petite fille qui sourit avec les mains pleines de peinture!"/>
+                                    <div class="text">
+					           <h1>Webagency<span>: L'agence de tous <br/>vos projet !</span></h1>
+					           <p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p><br/>
+					           <a class="bouton_infos" href="#services">Plus d'infos</a>
 					      </div>
 				      </div>
 				    
 
 				      <div class="mySlides fade">
-					     <img src="images/slider/bg2.jpg" alt="un petit garçon qui crie dans un microphone"/>
-					     <div class="text">
-					         <h1>Webagency<span>: L'agence de tous <br/>vos projet!</span></h1>
-					         <p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p><br/>
-					         <a class="bouton_infos" href="#services">Plus d'infos</a>
+					      <img src="images/slider/bg2.jpg" alt="un petit garçon qui crie dans un microphone"/>
+					      <div class="text">
+					           <h1>Webagency<span>: L'agence de tous <br/>vos projet!</span></h1>
+					           <p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p><br/>
+					           <a class="bouton_infos" href="#services">Plus d'infos</a>
 					      </div>
                               </div>
 
-                              <!-- Next and previous buttons -->
-                              <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
-                              
+                  <!-- ===============Next and previous buttons====================================-->
+                              <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>   
                               <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
 				    
 				</div>
@@ -82,212 +92,168 @@
 			</header>
 
 
-		<!--================= Section 1 nos services 
-		================================-->
-		    <section id="services">
+		<!--==================== Section 1 nos services ===========================================================================================-->
+		      <section id="services">
+                  
+                  <!--========titre et texte présentation des services==========================================-->
+		    	      <div class="nos_services">
+		    	            <h2>Nos services</h2>
+		    	            <div class="point_bleu_services"><span></span></div>
+                              <p>WebAgency vous accompagne dans tous vos projets web et vous propose des solutions sur mesure grâce à nos services.</p>
+            	      </div>
+                  <!--========image+ textes services détaillés================================================-->
+            	      <div class="ordi_services">
+            	            <img class="mac" src="images/main-feature.png" alt="ordinateur apple Mac"/>
 
-		    	<div class="nos_services">
-		    	   <h2>Nos services</h2>
-		    	   <div class="point_bleu_services"><span></span></div>
+            	            <div class="icones_texte_services">
+                                    <div class="ensemble">
+                        	            <i class="fa fa-line-chart fa-2x" aria-hidden="true"><p class="icone"></p></i>
+            		                  <div class="texte">
+            		                       <h3>UX Design</h3>
+            		                       <p>User eXperience Design rend votre site accessible, facile à prendre en main  et surtout efficient pour les utilisateurs en prenant en compte vos attentes et vos besoins.</p>
+            		                  </div>
+                                    </div>
+                        
+                                    <div class="ensemble">
+                        	            <i class="fa fa-cubes fa-2x" aria-hidden=add t.In css"true"><p class="icone"></p></i>
+                                          <div class="texte">
+            		                       <h3>UI Design</h3>
+            		                       <p>User Interface Design permet de faciliter la navigation d’un utilisateur sur votre site en intervenant sur l'aspect visuel de votre page afin de capter l'attention de vos visiteurs.</p>
+                                          </div>
+                                    </div>
 
-            	   <p>WebAgency vous accompagne dans tous vos projets web et vous propose des solutions sur mesure grâce à nos services.</p>
-            	</div>
+                                    <div class="ensemble">
+                        	           <i class="fa fa-pie-chart fa-2x" aria-hidden="true"><p class="icone"></p></i>
+                        	           <div class="texte">
+            		                       <h3>SEO</h3>
+            		                       <p>Search Engine Optimization sert à obtenir un bon positionnement de votre site web dans les résultats des moteurs de recherche. Le but est de le rendre visible à tous les internautes intéressés par ce qu’il vend et propose.</p>
+            		                  </div>
+            		            </div>
+                              </div>
+            	      </div>
 
-            	<div class="ordi_services">
-
-            	   <img class="mac" src="images/main-feature.png" alt="ordinateur apple Mac"/>
+                  </section>
 
 
-            	   <div class="icones_texte_services">
+		<!--=================== Section 2 nos projets ===============================================================================================-->
+		      <section id="portfolio">
 
-                        <div class="ensemble">
-
-                        	<div><i class="fa fa-line-chart fa-2x" aria-hidden="true"><p class="icone"></p></i></div>
-
-            		        <div class="texte">
-            		           <h3>UX Design</h3>
-            		           <p>User eXperience Design rend votre site accessible, facile à prendre en main  et surtout efficient pour les utilisateurs en prenant en compte vos attentes et vos besoins.</p>
-            		        </div>
+                  <!--========titre et texte présentation des projets==========================================-->
+		    	      <div class="nos_projets">
+		    	            <h2>Nos projets</h2>
+		    	            <div class="point_bleu_services"><span></span></div>
+            	            <p>WebAgency vous accompagne dans tous vos projets web et vous aide à les réaliser. Ils nous ont fait confiance pourquoi pas vous !</p>
+            	      </div>
+                  <!--========menu portfolio===================================================================-->
+            	      <nav class="menu_projets">
+                              <ul>
+                                    <li>
+                                          <a id="all-works-title" class="all_w">All Works<span class="fleche_bleue"></span></a>
+                                    </li>
+                                    <li>
+                                          <a id="creative-title">Creative<span class="fleche_bleue"></span></a>
+                                    </li>
+                                    <li>
+                                          <a id="corporate-title">Corporate<span class="fleche_bleue"></span></a>
+                                    </li>
+                                    <li>
+                                          <a id="portfolio-title" class="port">Portfolio<span class="fleche_bleue"></span></a>
+                                    </li>
+                              </ul>
+                        </nav>
+                  <!--========images portfolio=================================================================-->
+                        <div id="all_works">
+                              <div class="img_portfolio corporate">
+                                    <img class="img" src="images/portfolio/01.jpg" alt="opticien"/>
+                                    <div class="texte_img"><p>Enseigne d'Opticien</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio creative">
+                                    <img class="img" src="images/portfolio/02.jpg" alt="Galerie d'art"/>
+                                    <div class="texte_img"><p>Galerie d'art</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio portfolio">
+                                   <img class="img" src="images/portfolio/03.jpg" alt="Enseigne de coiffure"/>
+                                   <div class="texte_img"><p>Enseigne de coiffure</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio creative">
+                                   <img class="img" src="images/portfolio/04.jpg" alt="Enseigne d'architecte"/>
+                                   <div class="texte_img"><p>Enseigne d'architecte</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio corporate">
+                                   <img class="img" src="images/portfolio/05.jpg" alt="Boutique de prêt-à-porter"/>
+                                   <div class="texte_img"><p>Boutique de vêtements</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio corporate">
+                                   <img class="img" src="images/portfolio/06.jpg" alt="Entreprise du bâtiment"/>
+                                   <div class="texte_img"><p>Entreprise du bâtiment</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio creative">
+                                   <img class="img" src="images/portfolio/07.jpg" alt="Enseigne de meuble design"/>
+                                   <div class="texte_img"><p>Enseigne de </br>meuble design</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio portfolio">
+                                    <img class="img" src="images/portfolio/08.jpg" alt="Établissement de  fourniture et papeterie"/>
+                                    <div class="texte_img"><p>Établissement de </br>papeterie</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
+                              <div class="img_portfolio corporate">
+                                    <img class="img" src="images/portfolio/full.jpg" alt="Enseigne de restauration"/>
+                                    <div class="texte_img"><p>Enseigne de </br>restauration</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
+                              </div>
                         </div>
                         
-                        <div class="ensemble">
-                        
-                        	<i class="fa fa-cubes fa-2x" aria-hidden=add t.In css"true"><p class="icone"></p></i>
-
-                            <div class="texte">
-            		           <h3>UI Design</h3>
-            		           <p>User Interface Design permet de faciliter la navigation d’un utilisateur sur votre site en intervenant sur l'aspect visuel de votre page afin de capter l'attention de vos visiteurs.</p>
-                            </div>
-                        </div>
-
-                        <div class="ensemble">
-
-                        	<i class="fa fa-pie-chart fa-2x" aria-hidden="true"><p class="icone"></p></i>
-
-                        	<div class="texte">
-            		           <h3>SEO</h3>
-            		           <p>Search Engine Optimization sert à obtenir un bon positionnement de votre site web dans les résultats des moteurs de recherche. Le but est de le rendre visible à tous les internautes intéressés par ce qu’il vend et propose.</p>
-            		        </div>
-            		    </div>
-
-                   </div>
-
-            	</div>
+		      </section>
 
 
+		<!--========================= Section 3 formulaire ============================================================================================-->
+                  <section id="contact">
+                  <!--========carte google map avec marqueur localisation==========================================-->
+                        <div id="map"></div>
 
-            </section>
-		<!--=================== Section 2 nos projets =================================-->
-		    <section id="portfolio">
-
-		    	<div class="nos_projets">
-		    	   <h2>Nos projets</h2>
-		    	   <div class="point_bleu_services"><span></span></div>
-
-            	   <p>WebAgency vous accompagne dans tous vos projets web et vous aide à les réaliser. Ils nous ont fait confiance pourquoi pas vous !</p>
-            	</div>
-
-            	<nav class="menu_projets">
-            		<ul>
-            			<li><a class="all_w" href="#all_works">All Works<span class="fleche_bleue"></span></a></li>
-					<li><a href="#creative">Creative<span class="fleche_bleue"></span></a></li>
-					<li><a href="#corporate">Corporate<span class="fleche_bleue"></span></a></li>
-					<li><a class="port" href="#portfolio_img">Portfolio<span class="fleche_bleue"></span></a></li>
-            		</ul>
-            	</nav>
-
-             <div class="all_img">
-            	<div id="all_works">
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/01.jpg" alt="opticien"/>
-            			<div class="texte_img"><p>Enseigne d'Opticien</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/02.jpg" alt="Galerie d'art"/>
-            			<div class="texte_img"><p>Galerie d'art</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/03.jpg" alt="Enseigne de coiffure"/>
-            			<div class="texte_img"><p>Enseigne de coiffure</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/04.jpg" alt="Enseigne d'architecte"/>
-            			<div class="texte_img"><p>Enseigne d'architecte</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/05.jpg" alt="Boutique de prêt-à-porter"/>
-            			<div class="texte_img"><p>Boutique de vêtements</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/06.jpg" alt="Entreprise du bâtiment"/>
-            			<div class="texte_img"><p>Entreprise du bâtiment</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/07.jpg" alt="Enseigne de meuble design"/>
-            			<div class="texte_img"><p>Enseigne de </br>meuble design</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/08.jpg" alt="Établissement de  fourniture et papeterie"/>
-            			<div class="texte_img"><p>Établissement de </br>papeterie</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/full.jpg" alt="Enseigne de restauration"/>
-            			<div class="texte_img"><p>Enseigne de </br>restauration</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            	</div>
-
-            	<div id="creative">
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/02.jpg" alt="Galerie d'art"/>
-            			<div class="texte_img"><p>Galerie d'art</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/04.jpg" alt="Enseigne d'architecte"/>
-            			<div class="texte_img"><p>Enseigne d'architecte</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            			<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/07.jpg" alt="Enseigne de meuble design"/>
-            			<div class="texte_img"><p>Enseigne de </br>meuble design</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            	</div>
-
-            	<div id="corporate">
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/01.jpg" alt="opticien"/>
-            			<div class="texte_img"><p class="fond1">Enseigne d'Opticien</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/03.jpg" alt="Enseigne de coiffure"/>
-            			<div class="texte_img"><p>Enseigne de coiffure</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/06.jpg" alt="Entreprise du bâtiment"/>
-            			<div class="texte_img"><p>Entreprise du bâtiment</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/full.jpg" alt="Enseigne de restauration"/>
-            			<div class="texte_img"><p>Enseigne de </br>restauration</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            	</div>
-
-            	<div id="portfolio_img">
-            		<div class="img_portfolio">
-            			<img class="img" src="images/portfolio/05.jpg" alt="Boutique de prêt-à-porter"/>
-            			<div class="texte_img"><p>Boutique de vêtements</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-                    <div class="img_portfolio">
-            			<img class="img" src="images/portfolio/08.jpg" alt="Établissement de  fourniture et papeterie"/>
-            			<div class="texte_img"><p>Établissement de </br>papeterie</p><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-            		</div>
-            	</div>
-               </div>
-		    </section>
-		<!--========================= Section 3 formulaire ============================-->
-            <section id="contact">
-                  <div id="map"></div>
-
-                  <div id="formulaire">
-                        <h3>Contact Info</h3>
-                        <p><strong>WebAgency SAS</strong>
-                           </br>
-                           34 Rue de Dunkerque 75010 Paris
-                           </br>
-                           Tel : 02 77 75 55 22
-                        </p>
-                        
-                        <form method="post" action="traitement.php">
-                              <p>
-                                    <label for="Name"></label>
-                                    <input type="text" name="name" id="name" placeholder="name" size="38"/>
-                                    </br>
-                                    <label for="email"></label>
-                                    <input type="email" name="email" id="email" placeholder="Email" size="38"/>
-                                    </br>
-                                    <label for="subject"></label>
-                                    <input type="text" name="subject" id="subject" placeholder="Subject" size="38"/>
-                                    </br>
-                                    <label for="message"></label>
-                                    <textarea name="message" id="message" placeholder="Message"></textarea>
-                                    </br>
-                                    <label for="button"></label>
-                                    <input class="bouton_envoye" type="button" value="Send Message"/>
+                        <div id="formulaire">
+                              <h3>Contact Info</h3>
+                              <p><strong>WebAgency SAS</strong>
+                              </br>
+                              34 Rue de Dunkerque 75010 Paris
+                              </br>
+                              Tel : 02 77 75 55 22
                               </p>
-                        </form>
+                  <!--========formulaire de contact===============================================================-->
+                              <form method="post" action="traitement.php">
+                                    <p>
+                                          <label for="Name"></label>
+                                          <input type="text" name="name" id="name" placeholder="name" size="38"/>
+                                          </br>
+                                          <label for="email"></label>
+                                          <input type="email" name="email" id="email" placeholder="Email" size="38"/>
+                                          </br>
+                                          <label for="subject"></label>
+                                          <input type="text" name="subject" id="subject" placeholder="Subject" size="38"/>
+                                          </br>
+                                          <label for="message"></label>
+                                          <textarea name="message" id="message" placeholder="Message"></textarea>
+                                          </br>
+                                          <label for="button"></label>
+                                          <input class="bouton_envoye" type="button" value="Send Message"/>
+                                    </p>
+                              </form>
+                        </div>
+                  </section>
 
-                  </div>
-            </section>
+		<!--===================================== Pied de page ==============================================================================-->
+                  <footer>
+                  <!--========texte pied de page================================================-->
+                        <p class="footp">2018 - Site développé par Laureen Perrin pour l'établissement OpenClassRooms</p>
+                  <!--========lien retour haut de page==========================================-->
+                        <div class="retour_hp"><a href="#header">Retour en haut</a></div>
+                  </footer>
 
-		<!--===================================== Pied de page =====================-->
-            <footer>
-                  <p class="footp">2018 - Site développé par Laureen Perrin pour l'établissement OpenClassRooms</p>
-                  <div class="retour_hp"><a href="#header">Retour en haut</a></div>
-            </footer>
+            </div>
 
-        </div>
-
+      <!--========lien pour fihier js===========================================================-->
       <script src="javascript/fichier.js"></script>
+      <!--========lien pour api google map==========================================-->
       <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ76kREhc_TyEv0N721TQyg91xhHH6rog&callback=initMap">
-       </script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ76kREhc_TyEv0N721TQyg91xhHH6rog&callback=initMap"></script>
+     
 	</body>
 </html>
