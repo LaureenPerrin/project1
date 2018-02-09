@@ -10,7 +10,7 @@
  src: url("/fonts/fontawesome-regular-webfont.woff") format("woff"),
       url("/fonts/fontawesome-regular-webfont.ttf") format("truetype"),
       url("/fonts/fontawesome-regular-webfont.eot") format("eot"),
-      url("/fonts/fontawesome-regular-webfont.svg") format ("svg");
+      url("/fonts/fontawesome-regular-webfont.svg") format("svg");
 
     font-family: "glyphicons_halflings_regular", arial, sans-serif;
  src: url("/fonts/glyphicons-halflings-regular.woff") format("woff"),
@@ -174,7 +174,6 @@ header
   text-decoration: none;
   color: white;
   border-radius: 2px;
-  text-decoration: center;
   padding: 5px 10px;
   font-size: 0.2em;
 }
@@ -279,7 +278,7 @@ header
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%%;
+  width: 70%;
   margin: auto;
 }
 
@@ -344,7 +343,7 @@ header
   align-items: center;
 }
 
-.icones_texte_services p
+.icones_texte_services span
 {
   color: rgb(136, 139, 143);
 }
@@ -356,6 +355,11 @@ header
   padding-right: 5px;
   font-size: 0.7em;
 }
+
+.texte p 
+ {
+color: rgb(136, 139, 143);
+ }
 
 .ensemble
 {
@@ -380,7 +384,7 @@ header
   width: 5px;
   height: 5px;
   position: absolute;
-  bottom: -7px;
+  top: 20px;
   right: -5px;
 }
 
@@ -400,7 +404,6 @@ header
       transform: rotateX(360deg) scale(0.5, 0.5);
     }
   }
-
   .mac:hover
   {
     animation: animationmac 2s ease alternate;
@@ -437,15 +440,6 @@ header
 
 
 }
-
-
-
-
-
-
-
-
-
 /*________________________________media queries desktop__________*/
 @media(min-width:991px)
 {
@@ -493,7 +487,7 @@ header
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%%;
+  width: 70%;
   margin: auto;
 }
 
@@ -752,7 +746,7 @@ input
   background-color: rgb(92, 173, 211);
   border-top-right-left: 2px solid rgb(92, 173, 211);
   border-bottom:2px solid rgb(76,140,170);
-  border-radius: 5px;
+  border-radius:5px;
   color: white;
   padding: 10px 10px;
   width: 50%;
