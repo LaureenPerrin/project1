@@ -176,6 +176,11 @@ header
   border-radius: 2px;
   padding: 5px 10px;
   font-size: 0.2em;
+  font-weight: bold;
+  border-top: 2px solid rgb(92, 173, 211);
+  border-left:2px solid rgb(92, 173, 211);
+  border-right:2px solid rgb(92, 173, 211);
+  border-bottom:2px solid rgb(76,140,170);
 }
 
 .fade
@@ -200,6 +205,14 @@ header
 
 @media(min-width:768px)
 {
+  header
+  {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
   .text
   {
   top: 70px;
@@ -207,19 +220,22 @@ header
   font-size: 0.5em;
   }
 
+
   .bouton_infos
   {
   padding: 10px 20px;
-  font-size: 0.7em;
+  font-size: 1em;
   }
+
   .presentation
   {
-   display:flex;
+  display:flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 5px;
   margin-bottom: 3px;
   font-size: 1.2em;
+  font-weight: bold;
   }
 
   .prev, .next
@@ -404,6 +420,7 @@ color: rgb(136, 139, 143);
       transform: rotateX(360deg) scale(0.5, 0.5);
     }
   }
+  
   .mac:hover
   {
     animation: animationmac 2s ease alternate;
@@ -437,8 +454,6 @@ color: rgb(136, 139, 143);
   {
     font-size: 1em;
   }
-
-
 }
 /*________________________________media queries desktop__________*/
 @media(min-width:991px)
@@ -739,14 +754,17 @@ input
   margin-top: 15px;
   border: 1px solid rgb(136, 139, 143);
   padding: 10px 10px;
+  border-radius: 2px;
 }
 
 .bouton_envoye
 {
   background-color: rgb(92, 173, 211);
-  border-top-right-left: 2px solid rgb(92, 173, 211);
-  border-bottom:2px solid rgb(76,140,170);
-  border-radius:5px;
+  border-top: 2px solid rgb(92, 173, 211);
+  border-left: 2px solid rgb(92, 173, 211);
+  border-right: 2px solid rgb(92, 173, 211);
+  border-bottom: 2px solid rgb(76,140,170);
+  border-radius: 5px;
   color: white;
   padding: 10px 10px;
   width: 50%;
@@ -770,7 +788,7 @@ input
   position:absolute;
   right: 5px;
   top:35px;
-  width: 40%;
+  width: 28%;
   }
 
 }
