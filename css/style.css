@@ -53,6 +53,14 @@ header
   width: 100%;
 }
 /*____________________logo et menu navigation principale_________________*/
+.presentation
+{
+  position:fixed;
+  background-color:white;
+  width:100%;
+  z-index:1;
+  top: 0px;
+}
 
 .logo
 {
@@ -98,6 +106,7 @@ header
   max-width: 100%;
   position: relative;
   margin: auto;
+  margin-top:  150px;
 }
 .mySlides img
 {
@@ -209,8 +218,7 @@ header
   {
     justify-content: center;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
   }
 
   .text
@@ -232,7 +240,6 @@ header
   display:flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5px;
   margin-bottom: 3px;
   font-size: 1.2em;
   font-weight: bold;
@@ -286,6 +293,12 @@ header
 
 
 /*_____première partie section nos services_______________________________*/
+
+#services
+{
+  /* margin-top: 80px; */
+  padding-top: 105px;
+}
 
 .nos_services
 {
@@ -493,6 +506,7 @@ color: rgb(136, 139, 143);
 #portfolio
 {
   margin-top: 40px;
+  padding-top: 105px;
 }
 
 .nos_projets
@@ -709,13 +723,14 @@ color: rgb(136, 139, 143);
 /*__________________google map____________________*/
 #contact {
     margin-top: 80px;
+    padding-top: 30px;
 }
 
 #map
 {
   height: 600px;
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 /*_______________formulaire_______*/
@@ -786,11 +801,15 @@ input
   {
   background-color:rgba(255,255,255,0.5);
   position:absolute;
-  right: 5px;
-  top:35px;
-  width: 28%;
+  right: 45px;
+  top: 150px;
+  width: 28%
   }
 
+  .bouton_envoye
+  {
+    font-size:0.6em;
+  }
 }
 
 
@@ -800,6 +819,11 @@ input
   #formulaire
   {
    right: 50px;
+  }
+
+  .bouton_envoye
+  {
+    font-size:0.9em;
   }
 }
 
